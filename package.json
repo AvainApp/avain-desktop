@@ -1,7 +1,7 @@
 {
   "name": "avain-desktop",
   "version": "0.0.1",
-  "description": "",
+  "description": "Avain for desktop",
   "main": "index.js",
   "build": {
     "productName": "Avain",
@@ -17,10 +17,27 @@
     "version": "node syncversion"
   },
   "author": "Juha Lindstedt",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "electron": "~3.0.10",
     "electron-builder": "~20.36.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvainApp/avain-desktop.git"
+  },
+  "keywords": [
+    "avain",
+    "pwa",
+    "electron",
+    "otp",
+    "encryption",
+    "javascript",
+    "redom"
+  ],
+  "bugs": {
+    "url": "https://github.com/AvainApp/avain-desktop/issues"
+  },
+  "homepage": "https://github.com/AvainApp/avain-desktop#readme"
 }
