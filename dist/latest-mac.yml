@@ -1,0 +1,12 @@
+version: 0.0.1
+files:
+  - url: Avain-0.0.1-mac.zip
+    sha512: IO3VeoFE/v7oM8qESbvBzjYNkXEpPnGWgtZTIM8GfVCK1aGsZ/PSUte75CBYVSk98bRejujF9GLyJoIite91OQ==
+    size: 50321518
+    blockMapSize: 52756
+  - url: Avain-0.0.1.dmg
+    sha512: AY1Y0Kw+km/qgffzqCxIAr7DyE9cyS2MG40sa9HxLYY0hdPgOtGq0XvRYKSf49LqBr4fuwcBnoANvL7wgkiqTA==
+    size: 51881377
+path: Avain-0.0.1-mac.zip
+sha512: IO3VeoFE/v7oM8qESbvBzjYNkXEpPnGWgtZTIM8GfVCK1aGsZ/PSUte75CBYVSk98bRejujF9GLyJoIite91OQ==
+releaseDate: '2018-11-21T20:22:49.908Z'

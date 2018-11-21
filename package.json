@@ -6,7 +6,10 @@
   "build": {
     "productName": "Avain",
     "appId": "app.avain",
-    "publish": "github",
+    "publish": {
+      "provider": "generic",
+      "url": "https://avain.app/desktop/"
+    },
     "mac": {
       "icon": "app/Icon.icns"
     }
@@ -14,7 +17,6 @@
   "scripts": {
     "start": "electron app/",
     "build": "electron-builder build",
-    "publish": "electron-builder build --publish always",
     "version": "node syncversion"
   },
   "author": "Juha Lindstedt",
