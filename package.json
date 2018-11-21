@@ -7,8 +7,8 @@
     "productName": "Avain",
     "appId": "app.avain",
     "publish": {
-      "provider": "generic",
-      "url": "https://avain.app/desktop/"
+      "provider": "github",
+      "releaseType": "release"
     },
     "mac": {
       "icon": "app/Icon.icns"
