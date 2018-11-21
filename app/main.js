@@ -10,7 +10,8 @@ let currentIcon = lightIcon;
 
 const mb = menubar({
   icon: path.join(__dirname, 'Icon.png'),
-  preloadWindow: true
+  preloadWindow: true,
+  resizable: false
 });
 
 mb.app.on('window-all-closed', () => {
@@ -24,8 +25,6 @@ ipcMain.on('avain-close', () => {
 });
 
 mb.on('ready', () => {
-  console.log('ready');
-
   mb.on('show', () => {
     mb.tray.setImage(darkIcon);
   });
