@@ -1,4 +1,4 @@
-# Avain for desktop
+# Avain for Desktop
 
 https://avain.app
 
