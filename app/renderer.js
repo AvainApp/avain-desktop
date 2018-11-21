@@ -14,9 +14,11 @@ window.addEventListener('resize', resize);
 resize();
 
 window.addEventListener('message', (e) => {
-  if (e && e.data && e.data.avain && e.data.avain.close) {
-    if (confirm('Are you sure you want to close Avain?')) {
-      ipcRenderer.send('avain-close');
+  if (e && e.data && e.data.avain) {
+    if (e.data.avain.close) {
+      if (confirm('Are you sure you want to close Avain?')) {
+        ipcRenderer.send('avain-close');
+      }
     }
   }
 });
