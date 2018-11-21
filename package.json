@@ -1,0 +1,26 @@
+{
+  "name": "avain-desktop",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "build": {
+    "productName": "Avain",
+    "appId": "app.avain",
+    "publish": "github",
+    "mac": {
+      "icon": "app/Icon.icns"
+    }
+  },
+  "scripts": {
+    "start": "electron app/",
+    "build": "electron-builder build",
+    "version": "node syncversion"
+  },
+  "author": "Juha Lindstedt",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "~3.0.10",
+    "electron-builder": "~20.36.2"
+  }
+}
