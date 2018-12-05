@@ -30,6 +30,7 @@ mb.on('ready', () => {
   });
 
   mb.on('hide', () => {
+    mb.window.reload();
     mb.tray.setImage(currentIcon);
   });
 
