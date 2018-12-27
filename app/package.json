@@ -1,7 +1,7 @@
 {
   "name": "Avain",
   "main": "main.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Secure one-time password manager",
   "author": "Juha Lindstedt",
   "dependencies": {
