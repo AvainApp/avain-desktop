@@ -26,8 +26,8 @@
     "dotenv-cli": "~1.4.0"
   },
   "devDependencies": {
-    "electron": "~4.0.1",
-    "electron-builder": "~20.38.4"
+    "electron": "~4.0.4",
+    "electron-builder": "~20.38.5"
   },
   "repository": {
     "type": "git",
