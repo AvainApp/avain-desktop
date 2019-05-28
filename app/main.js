@@ -1,6 +1,6 @@
 const { app, ipcMain } = require('electron');
 const path = require('path');
-const menubar = require('menubar');
+const { menubar } = require('@amaurymartiny/menubar');
 const { autoUpdater } = require('electron-updater');
 const { systemPreferences } = require('electron');
 
@@ -11,7 +11,12 @@ let currentIcon = lightIcon;
 const mb = menubar({
   icon: path.join(__dirname, 'Icon.png'),
   preloadWindow: true,
-  resizable: false
+  resizable: false,
+  browserWindow: {
+    webPreferences: {
+      nodeIntegration: true
+    }
+  }
 });
 
 mb.app.on('window-all-closed', () => {
@@ -30,7 +35,7 @@ mb.on('ready', () => {
   });
 
   mb.on('hide', () => {
-    mb.window.reload();
+    mb.browserWindow.reload();
     mb.tray.setImage(currentIcon);
   });
 
