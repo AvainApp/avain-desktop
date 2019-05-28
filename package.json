@@ -23,11 +23,12 @@
   "author": "Juha Lindstedt",
   "license": "MIT",
   "dependencies": {
+    "@amaurymartiny/menubar": "~6.1.0",
     "dotenv-cli": "~2.0.0"
   },
   "devDependencies": {
-    "electron": "~4.1.0",
-    "electron-builder": "~20.39.0"
+    "electron": "~5.0.2",
+    "electron-builder": "~20.41.0"
   },
   "repository": {
     "type": "git",
