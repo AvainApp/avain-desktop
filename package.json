@@ -18,13 +18,15 @@
     "start": "electron app/",
     "build": "electron-builder build",
     "release": "dotenv electron-builder build --publish always",
+    "rebuild": "electron-rebuild",
     "version": "node syncversion"
   },
   "author": "Juha Lindstedt",
   "license": "MIT",
   "dependencies": {
-    "@amaurymartiny/menubar": "~6.1.0",
-    "dotenv-cli": "~2.0.0"
+    "dotenv-cli": "~2.0.0",
+    "electron-rebuild": "~1.8.5",
+    "menubar": "~6.0.2"
   },
   "devDependencies": {
     "electron": "~5.0.2",
