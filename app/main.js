@@ -1,12 +1,12 @@
 const { app, ipcMain } = require('electron');
 const path = require('path');
-const menubar = require('menubar');
+const { menubar } = require('menubar');
 const { autoUpdater } = require('electron-updater');
-const { systemPreferences } = require('electron');
+const { nativeTheme, systemPreferences } = require('electron');
 
 const lightIcon = path.join(__dirname, 'Icon.png');
 const darkIcon = path.join(__dirname, 'IconDark.png');
-let currentIcon = lightIcon;
+const currentIcon = lightIcon;
 
 const mb = menubar({
   icon: path.join(__dirname, 'Icon.png'),
@@ -28,35 +28,9 @@ ipcMain.on('avain-close', () => {
 });
 
 mb.on('ready', () => {
-  mb.on('show', () => {
-    mb.tray.setImage(darkIcon);
-  });
-
   mb.on('hide', () => {
     mb.window.reload();
-    mb.tray.setImage(currentIcon);
   });
-
-  if (process.platform === 'darwin') {
-    const setOSTheme = () => {
-      const dark = systemPreferences.isDarkMode();
-
-      if (dark) {
-        currentIcon = darkIcon;
-        mb.tray.setImage(currentIcon);
-      } else {
-        currentIcon = lightIcon;
-        mb.tray.setImage(currentIcon);
-      }
-    };
-
-    setOSTheme();
-
-    systemPreferences.subscribeNotification(
-      'AppleInterfaceThemeChangedNotification',
-      setOSTheme
-    );
-  }
 });
 
 const log = require('electron-log');
