@@ -1,6 +1,6 @@
 {
   "name": "avain-desktop",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Avain for desktop",
   "main": "index.js",
   "build": {
